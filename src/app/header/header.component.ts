@@ -3,6 +3,7 @@ import { UserRegistrationService  } from '../fetch-api-data.service';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatToolbar } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-header',
@@ -15,7 +16,8 @@ export class HeaderComponent implements OnInit {
     public fetchApiData: UserRegistrationService,
     public router: Router,
     public snackBar: MatSnackBar,
-    public dialog: MatDialogModule
+    public dialog: MatDialogModule,
+    
   ) { }
 
   ngOnInit(): void {

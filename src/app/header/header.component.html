@@ -1,7 +1,6 @@
-<div class="nav-bar" style="font-size: large;">
-    <button mat-button style="font-size: large;" (click)="toMovies()">myHorror</button>
-    <span></span>
-    <button mat-button style="font-size: large;" (click)="toProfile()">Profile</button>
-    <span></span>
-    <button mat-button style="font-size: large;" (click)="logOut()">Logout</button>
-</div>
+<mat-toolbar style="background-color: black; color: white;">
+    <button mat-button class="nav-brand" style="font-size: large;" (click)="toMovies()">myHorror</button>
+    <span class="nav-spacer"></span>
+    <button mat-button  style="font-size: medium;" (click)="toProfile()">Profile</button>
+    <button mat-button  style="font-size: medium;" (click)="logOut()">Logout</button>
+</mat-toolbar>
