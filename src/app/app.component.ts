@@ -13,12 +13,7 @@ export class AppComponent {
   title = 'myHorror';
 
   
-  //This is the function that will open the dialog when the signup button is clicked  
- 
-
-  // openMoviesDialog(): void {
-  //   this.dialog.open(MovieCardComponent, {
-  //     width: '500px'
-  //   });
-  // }
-}
+  isUser(): boolean {
+    return (localStorage.getItem('user') === null)
+  };
+}  

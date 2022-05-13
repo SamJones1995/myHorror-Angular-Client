@@ -99,7 +99,7 @@ export class ProfileViewComponent implements OnInit {
       this.router.navigate(['login']).then(() => {
         this.snackBar.open('Your account was deleted', 'OK', {duration: 6000});
       });
-      this.router.navigate(['welcome'])
+      this.router.navigate(['login'])
       this.fetchApiData.deleteUser().subscribe(() => {
         localStorage.clear();
       });
