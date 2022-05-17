@@ -47,7 +47,6 @@ const appRoutes: Routes = [
     SynopsisCardComponent,
     ProfileViewComponent,
     EditProfileComponent,
-    
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -66,6 +65,6 @@ const appRoutes: Routes = [
     MatToolbarModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
